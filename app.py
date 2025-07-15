@@ -58,7 +58,7 @@ class Chat(db.Model):
     reply = db.Column(db.String(500))
 
 # Create DB Tables
-@app.before_first_request
+@app.before_request
 def create_tables():
     db.create_all()
 

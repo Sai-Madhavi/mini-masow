@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Baby Masow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Baby Masow</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/login">Logout</a>
+    </nav>
+  </header>
+
+  <h3>YouTube Player</h3>
+<input type="text" id="songInput" placeholder="Enter song name" />
+<button onclick="playSong()">Play Song</button>
+<iframe id="youtubePlayer" width="100%" height="315" src="" frameborder="0" allowfullscreen></iframe>
+
+<h3>Upload Image</h3>
+<input type="file" id="imageInput" accept="image/*" onchange="uploadImage()" />
+<div id="imageDescription"></div>
+
+<h3>Ask Me Anything</h3>
+<input type="text" id="searchInput" placeholder="What is the weather today?" />
+<button onclick="searchWeb()">Search</button>
+<p id="searchResult"></p>
+
+  <div class="container">
+    <input id="userInput" placeholder="Ask me anything..." />
+    <button onclick="startListening()">🎤 Speak</button>
+    <button onclick="sendMessage()">Send</button>
+    <p id="response"></p>
+    <div id="chatHistory" style="margin-top: 20px;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

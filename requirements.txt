@@ -1,0 +1,8 @@
+Flask
+gtts
+SpeechRecognition
+requests
+python-dotenv
+Flask-Login
+bcrypt
+flask-sqlalchemy

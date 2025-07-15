@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard - Baby Masow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Baby Masow</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/login">Logout</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Welcome, <span id="userEmail"></span>!</h2>
+
+    <div class="stats">
+      <p><strong>Total Chats:</strong> <span id="totalChats">0</span></p>
+      <p><strong>Last Message:</strong> <span id="lastMessage">None</span></p>
+      <p><strong>Last Reply:</strong> <span id="lastReply">None</span></p>
+    </div>
+
+    <h3>Recent Chats</h3>
+    <ul id="chatList"></ul>
+
+    <h3>Suggestions for You</h3>
+    <ul id="suggestions">
+      <li>Loading...</li>
+    </ul>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
